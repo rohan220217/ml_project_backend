@@ -1,10 +1,10 @@
 version: "3.0"
-services:
-  flask-web:
-    container_name: docker-flask-web
-    restart: always
-    build: ./web
-    ports:
+
+flask-web:
+  container_name: docker-flask-web
+  restart: always
+  build: ./web
+  ports:
     − "5000:5000"
-    volumes:
+  volumes:
     − .:/code
