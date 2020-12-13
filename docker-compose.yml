@@ -1,8 +1,8 @@
 version: "3.0"
 
 services:
-  flask-web:
-    container_name: docker-flask-web
+  flask-ml:
+    container_name: docker-flask-ml
     restart: always
     build: ./web
     ports:
