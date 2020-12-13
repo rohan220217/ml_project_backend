@@ -2,7 +2,7 @@ FROM python:3
 
 RUN apt-get -y update
 
-RUN apt-get install -y pip3 build-essential
+RUN apt-get install -y pytnon3-pip build-essential
 
 COPY . .
 
