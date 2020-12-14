@@ -1,11 +1,10 @@
-tensorflow
-Flask
-Flask-Cors
-flask-ngrok
-Flask-RESTful
+Flask==1.1.2
+Flask-Cors==3.0.9
+flask-ngrok==0.0.25
+Flask-RESTful==0.3.8
 Keras-Preprocessing==1.1.2
-matplotlib
-numpy
+matplotlib==3.3.3
+numpy==1.18.5
 opencv-python==4.4.0.46
 pandas==1.1.5
 Pillow==8.0.1
