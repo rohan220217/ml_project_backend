@@ -25,7 +25,7 @@ import os
 
 
 from flask import Flask, jsonify
-from flask_ngrok import run_with_ngrok
+# from flask_ngrok import run_with_ngrok
 from flask_restful import Api, Resource, abort, reqparse
 from flask_cors import CORS
 import json
@@ -35,22 +35,22 @@ from time import localtime
 import requests
 
 #Ethnicity Model
-export_path='./cnn_eth'
+export_path='cnn_eth'
 loaded_model_eth=tf.keras.models.load_model(export_path)
 
 #Gender Model
-export_path='./cnn_gender'
+export_path='cnn_gender'
 loaded_model_gender=tf.keras.models.load_model(export_path)
 
 #Age Model
-export_path='./reg_age'
+export_path='reg_age'
 loaded_model_age=tf.keras.models.load_model(export_path)
 
 #Novelty Model
 export_path = './novel_40_non_aug'
 loaded_model_novelty=tf.keras.models.load_model(export_path)
 app = Flask(__name__, static_folder="images")
-run_with_ngrok(app)
+# run_with_ngrok(app)
 CORS(app)
 api = Api(app)
 
@@ -105,4 +105,5 @@ api.add_resource(Protein, '/predict/<string:img_id>')
 api.add_resource(Filesa, '/files')
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
+	
