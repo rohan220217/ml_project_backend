@@ -4,7 +4,7 @@ flask-ngrok==0.0.25
 Flask-RESTful==0.3.8
 Keras-Preprocessing==1.1.2
 matplotlib==3.3.3
-numpy==1.18.5
+numpy==1.19.3
 opencv-python==4.4.0.46
 pandas==1.1.5
 Pillow==8.0.1
