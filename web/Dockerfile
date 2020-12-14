@@ -1,4 +1,4 @@
-FROM python:3
+FROM amd64/python:3
 
 RUN apt-get -y update
 
